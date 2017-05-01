@@ -3,6 +3,7 @@ FROM debian:latest
 
 RUN apt-get update
 RUN apt-get install sudo
+RUN apt-get install curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo npm install node-gyp -g
